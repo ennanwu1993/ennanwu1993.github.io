@@ -253,3 +253,12 @@ p { margin: 0 0 1.1rem; }
   .fineprint { grid-column: 1; }
 }
 @media (max-width: 420px) { .contact { grid-template-columns: 1fr; gap: 0; } .contact dd { margin-bottom: .8rem; } }
+
+/* Index tags on publications (SSCI, CSSCI, ...) */
+.tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .5rem; }
+.tag {
+  font-size: .8rem; line-height: 1.45; padding: .08rem .5rem; border-radius: 3px;
+  color: var(--accent); border: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  font-variant-numeric: lining-nums; white-space: nowrap;
+}
