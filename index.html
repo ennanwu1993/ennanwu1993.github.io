@@ -19,16 +19,8 @@
   <link rel="preload" href="assets/fonts/spectral-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
   <script>
-    // Pick the language before first paint: saved choice, else the browser's language.
-    (function () {
-      var lang = null;
-      try { lang = localStorage.getItem("lang"); } catch (e) {}
-      if (lang !== "zh" && lang !== "en") {
-        lang = (navigator.language || "").toLowerCase().indexOf("zh") === 0 ? "zh" : "en";
-      }
-      document.documentElement.setAttribute("data-lang", lang);
-      document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-    })();
+    // The page always opens in English; the 中文 button switches to Chinese.
+    document.documentElement.setAttribute("data-lang", "en");
   </script>
   <script type="application/ld+json">
   {
@@ -146,17 +138,31 @@
           </p>
         </li>
         <li>
-          <span class="when">2026</span>
+          <span class="when"><span class="en">Oct 2026</span><span class="zh">2026.10</span></span>
           <p>
             <span class="en">Joined the School of Literature and Arts at Southwest University of Science and Technology as Associate Professor.</span>
             <span class="zh">加入西南科技大学文学与艺术学院，任特聘副教授。</span>
           </p>
         </li>
         <li>
-          <span class="when">2026</span>
+          <span class="when"><span class="en">Sep 2026</span><span class="zh">2026.09</span></span>
           <p>
             <span class="en">Talked about Chinese Dreamcore, <i>tangping</i>, Mark Fisher and hauntology on the <a href="https://youtu.be/azUuq09ZGRs">Acid Horizon</a> podcast.</span>
             <span class="zh">做客学术播客 <a href="https://youtu.be/azUuq09ZGRs">Acid Horizon</a>，围绕中式梦核、躺平与幽灵学展开对谈。</span>
+          </p>
+        </li>
+        <li>
+          <span class="when"><span class="en">Sep 2026</span><span class="zh">2026.09</span></span>
+          <p>
+            <span class="en">Interviewed by <i>The Economist</i>; the piece is forthcoming.</span>
+            <span class="zh">接受《经济学人》采访，报道待刊发。</span>
+          </p>
+        </li>
+        <li>
+          <span class="when"><span class="en">Sep 2026</span><span class="zh">2026.09</span></span>
+          <p>
+            <span class="en">“Becoming the ‘Post-Reality’”, on AIGC, memory generation and AI anthropology, published in <a href="https://doi.org/10.1177/20539517261481725"><i>Big Data &amp; Society</i></a>.</span>
+            <span class="zh">关于生成式人工智能、记忆生成与AI人类学的论文发表于 <a href="https://doi.org/10.1177/20539517261481725"><i>Big Data &amp; Society</i></a>。</span>
           </p>
         </li>
         <li>
@@ -178,13 +184,6 @@
           <p>
             <span class="en">Best Paper Award at the 47th International Conference on the Fantastic in the Arts, Orlando, for an autoethnography of <i>Baldur’s Gate 3</i>.</span>
             <span class="zh">关于《博德之门3》的自我民族志论文获国际奇幻研究协会第47届年会最佳论文奖。</span>
-          </p>
-        </li>
-        <li>
-          <span class="when">2026</span>
-          <p>
-            <span class="en">“Becoming the ‘Post-Reality’”, on AIGC, memory generation and AI anthropology, published in <a href="https://doi.org/10.1177/20539517261481725"><i>Big Data &amp; Society</i></a>.</span>
-            <span class="zh">关于生成式人工智能、记忆生成与AI人类学的论文发表于 <a href="https://doi.org/10.1177/20539517261481725"><i>Big Data &amp; Society</i></a>。</span>
           </p>
         </li>
       </ol>
@@ -408,7 +407,7 @@
         </div>
         <figcaption>
           <span class="vt">Chinese Dreamcore: Tangping, Mark Fisher, and Hauntology in the Anthropocene</span>
-          <span class="vm"><span class="en">Acid Horizon podcast, 2026</span><span class="zh">学术播客 Acid Horizon，2026年</span></span>
+          <span class="vm"><span class="en">Acid Horizon podcast, September 2026</span><span class="zh">学术播客 Acid Horizon，2026年9月</span></span>
           <p>
             <span class="en">A conversation on Chinese Dreamcore, <i>tangping</i>, Mark Fisher and hauntology in the Anthropocene, following my article in <i>The Senses and Society</i>. <a href="https://youtu.be/azUuq09ZGRs">Watch on YouTube</a></span>
             <span class="zh">围绕中式梦核、躺平、马克·费舍（Mark Fisher）与人类世中的幽灵学展开对谈，延续发表于 <i>The Senses and Society</i> 的相关研究。<a href="https://youtu.be/azUuq09ZGRs">在 YouTube 观看</a></span>

@@ -1,14 +1,14 @@
 (function () {
   var root = document.documentElement;
 
-  // Language toggle (EN / 中文). The initial choice is set in <head> before paint.
+  // Language toggle. The page opens in English; this button switches to Chinese and back.
+  try { localStorage.removeItem("lang"); } catch (e) {} // clear the choice older versions remembered
   var toggle = document.getElementById("lang-toggle");
   if (toggle) {
     toggle.addEventListener("click", function () {
       var next = root.getAttribute("data-lang") === "zh" ? "en" : "zh";
       root.setAttribute("data-lang", next);
       root.lang = next === "zh" ? "zh-CN" : "en";
-      try { localStorage.setItem("lang", next); } catch (e) {}
     });
   }
 
